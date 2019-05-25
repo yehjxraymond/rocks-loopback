@@ -1,0 +1,29 @@
+{
+  "name": "rock",
+  "plural": "rocks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "number",
+      "required": true
+    },
+    "engraving": {
+      "type": "string"
+    },
+    "location": {
+      "type": "geopoint"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
