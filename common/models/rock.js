@@ -13,7 +13,7 @@ const getJoke = async () => {
 };
 
 module.exports = function(Rock) {
-  Rock.observe("before save", async (ctx, next) => {
+  Rock.observe("before save", async (ctx) => {
     if (ctx.instance) {
       if (!ctx.instance.engraving) {
         ctx.instance.engraving = await getJoke();
@@ -23,6 +23,5 @@ module.exports = function(Rock) {
         ctx.data.engraving = await getJoke();
       }
     }
-    next();
   });
 };
