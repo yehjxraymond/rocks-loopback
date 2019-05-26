@@ -15,6 +15,9 @@
       "type": "number",
       "required": true
     },
+    "image": {
+      "type": "string"
+    },
     "engraving": {
       "type": "string"
     },
